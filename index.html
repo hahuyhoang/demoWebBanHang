@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Demo</title>
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
 </head>
 <body>
     <header class="">
@@ -52,10 +55,10 @@
                 </div>
             </div>
           </nav>
-        <nav class="navbar-second bg-light pb-3">
-            <div class="container">
+        <nav class="navbar-second bg-light ">
+            <div class="container ">
                 <nav class="navbar navbar-expand-lg pb-4 ">
-                    <div class="container-fluid d-flex justify-conten-between">
+                    <div class="container-fluid d-flex justify-conten-between ">
                       <div class="logo-vmms">
                         <img src="asset/images/logovmms.png" class="height-logo" alt="logovmms">
                       </div>
@@ -92,40 +95,177 @@
             </div>
         </nav>
         <nav class="navbar-end-content bg-blue">
-            <div class="container">
                 <nav class="navbar navbar-expand-lg d-flex">
-                    <div class="list-item">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
-                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="container end-header">
+                        <div class="list-menu">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <div class="list-item d-flex">
+                                        <div class="list-content ps-4 fs-4">
+                                            <i class="fa-solid fa-list text-white "></i>
+                                            <a class="navbar-brand text-white fs-4 ps-3" aria-current="page" href="#">Danh mục sản phẩm</a>
+                                        </div>
+                                     </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="offcanvas-body">
-                            <p>Try scrolling the rest of the page to see this option in action.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          <a class="nav-link" href="#">Features</a>
-                          <a class="nav-link" href="#">Pricing</a>
-                          <a class="nav-link disabled">Disabled</a>
-                        </div>
-                      </div>
+                        <ul class="nav justify-content-end ">
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white px-3 fs-5" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white px-4">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white px-4">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white ">Khuyến mãi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white px-5">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white me-1">Liên hệ</a>
+                            </li>
+                          </ul>
                     </div>
                 </nav>
             </div>
         </nav>
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="slider">
+        <div class="slide bg-light pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-8">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="asset/images/banner-slide.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="asset/images/banner-slide.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="asset/images/banner-slide.png" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev pe-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="col-6 col-sm-4 ps-4">
+                        <img src="asset/images/banner-1.png" class="pb-5 font-size" alt="">
+                        <div class="col-4">
+                        <img src="asset/images/banner-2.png" style="height: 192px; margin-top: -18px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <nav class="category bg-light">
+            <div class="container ">
+                <div class="text-center">
+                    <div class="row align-items-center pt-5 mb-3 ">
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Dược phẩm</p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Vitamin</p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Covid 19</p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Thiết bị y tế</p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Tinh dầu</p>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col">
+                            <div class="card w-247">
+                                <img src="asset/images//danhmuc6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text fs-4">Sữa tắm</p>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+         </nav>
+    </section>
+    <section class="flash-sale"> 
+            <div class=" flash-sale bg-blue pt-3">
+                <div class="container position-relative">
+                    <div class="flash-sale-item bg-white rounded-4">
+                        <div class="flash-sale-text-header d-flex">
+                            <div class="flash-sale d-flex py-3 fs-3 px-3">
+                                <i class="fa-solid fa-bolt-lightning py-2 px-3"></i>
+                                <div class="deal-shock">
+                                    <p>Giá sốc hôm nay</p>
+                                </div>
+                                <div class="count-down d-flex px-3">
+                                    <div class="time">
+                                        <h2 class="hours time">00</h2>
+                                        
+                                    </div>
+                                    <div class="time">
+                                        <h2 class="minute time">00</h2>
+                                    </div>
+                                    <div class="time">
+                                        <h2 class="sec time">00</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-all d-flex py-3 ">
+                                <div class="view-text fs-4">
+                                    <p>Xem deal hot ngay</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-right py-2 fs-4 px-2" ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
@@ -135,7 +275,30 @@
     <section></section>
     <section></section>
     <footer></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   <Script src="main.js"></Script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
 </html>

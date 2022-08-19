@@ -91,3 +91,36 @@ li{
 .offcanvas-body{
     display: none;
 }
+.end-header{
+    padding: 12px;
+    margin-bottom: 2px;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+.font-size{
+    height: 240px;
+}
+.w-247{
+    width: 247px;
+}
+.category .card:hover{
+    border: 3px solid #ccc;
+    color: #4972CE;
+    cursor: pointer;
+}
+.category{
+    padding-bottom: 37px;
+}
+.time{
+    font-weight: bold;
+    height: 43px;
+    margin: 0 12px 0 10px;
+    width: auto;
+    border-radius: 37%;
+    background-color: #4972CE;
+}
+.flash-sale-text-header{
+    justify-content: space-between;
+}
